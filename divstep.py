@@ -23,8 +23,9 @@ def divstep(A,B):
 		print(" "*(B.order+2+A.order-V.order)+tostr(V))
 	return A/B
 	
-G=np.poly1d([1,0,0,1,1])
-X=np.poly1d([1,0,1,1])
-xm = np.poly1d( [1] + [0] * G.order )
 
-divstep(X*xm,G)
+# G=np.poly1d([1,0,0,1,1])
+# X=np.poly1d([1,0,1,1])
+# xm = np.poly1d( [1] + [0] * G.order )
+
+# divstep(X*xm,G)

@@ -2,7 +2,7 @@ import numpy as np
 import sympy
 from sympy.abc import x
 
-import divstep
+from divstep import divstep
 
 sympy.init_printing()
 def printp(poly):
@@ -18,9 +18,10 @@ xm = np.poly1d( [1] + [0] * G.order )
 printp(G)
 printp(X)
 
-C=divstep((xm*X)/G)
+C=divstep(xm*X,G)
 W=xm*X+C[1]
-print("W=",W)
+print("W=")
+printp(W)
 
 
 
